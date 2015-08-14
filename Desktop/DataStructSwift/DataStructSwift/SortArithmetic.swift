@@ -12,7 +12,7 @@ class SortArithmetic: NSObject {
     class func bubbleSortWith(var array:[Int]) ->[Int]{
         for var index = 0; index < array.count; index++ {
             for var indexOfUnCompared = index; indexOfUnCompared < array.count; indexOfUnCompared++ {
-                if array[index] < array[indexOfUnCompared]{
+                if array[index] > array[indexOfUnCompared]{
                     let temp = array[index]
                     array[index] = array[indexOfUnCompared]
                     array[indexOfUnCompared] = temp
@@ -22,17 +22,23 @@ class SortArithmetic: NSObject {
         return array
     }
     
-    class func binarySearchWith( sortedArray:[Int], elementInArray:Int) ->Int{
-        var low = 0, hight = sortedArray.count, mid = 0;
-        
-        
+    class func binarySearchWith(sortedArray sortedArray:[Int], elementInArray:Int) ->Int{
+        var low = 0, hight = sortedArray.count - 1, mid = 0;
         while low <= hight{
+            // get the mid index of sortedArray
+            mid = (low + hight) / 2;
+            
+            if sortedArray[mid] < elementInArray {
+                low = mid + 1
+            }else if sortedArray[mid] > elementInArray {
+                hight = mid - 1
+            }else{
+                // find the index
+                return mid
+            }
             
         }
-        
-        return 0
-    
+        // not find
+        return NSNotFound
     }
-    
-    
 }

@@ -12,7 +12,14 @@ var sortableArray = [1,23,5,6,1,2,6,75,3,1,23,732,432,7,12,43,6,3,56,23]
 
 var sortedArray = SortArithmetic.bubbleSortWith(sortableArray)
 
-print(sortedArray, appendNewline: false)
+print(sortedArray, appendNewline: true)
+
+var index = SortArithmetic.binarySearchWith(sortedArray: sortedArray, elementInArray: 732)
+
+print("the Element `\(sortedArray[index])` index of array is \(index)")
+
+
+
 
 
 
