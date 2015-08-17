@@ -10,6 +10,7 @@
 		26AE4FA91B7E274100E7D6BA /* LinkList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26AE4FA81B7E274100E7D6BA /* LinkList.swift */; };
 		4C92AE5C1B7DEFBF00AE88B9 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C92AE5B1B7DEFBF00AE88B9 /* main.swift */; };
 		4C92AE631B7DF06300AE88B9 /* SortArithmetic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C92AE621B7DF06200AE88B9 /* SortArithmetic.swift */; };
+		4CDF47CC1B81D7FD00A6BBD7 /* LinkStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CDF47CB1B81D7FD00A6BBD7 /* LinkStack.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -29,6 +30,7 @@
 		4C92AE581B7DEFBF00AE88B9 /* DataStructSwift */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DataStructSwift; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C92AE5B1B7DEFBF00AE88B9 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		4C92AE621B7DF06200AE88B9 /* SortArithmetic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SortArithmetic.swift; sourceTree = "<group>"; };
+		4CDF47CB1B81D7FD00A6BBD7 /* LinkStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LinkStack.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 				4C92AE5B1B7DEFBF00AE88B9 /* main.swift */,
 				4C92AE621B7DF06200AE88B9 /* SortArithmetic.swift */,
 				26AE4FA81B7E274100E7D6BA /* LinkList.swift */,
+				4CDF47CB1B81D7FD00A6BBD7 /* LinkStack.swift */,
 			);
 			path = DataStructSwift;
 			sourceTree = "<group>";
@@ -127,6 +130,7 @@
 			files = (
 				4C92AE5C1B7DEFBF00AE88B9 /* main.swift in Sources */,
 				26AE4FA91B7E274100E7D6BA /* LinkList.swift in Sources */,
+				4CDF47CC1B81D7FD00A6BBD7 /* LinkStack.swift in Sources */,
 				4C92AE631B7DF06300AE88B9 /* SortArithmetic.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
