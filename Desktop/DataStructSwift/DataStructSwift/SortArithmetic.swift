@@ -22,7 +22,7 @@ class SortArithmetic: NSObject {
         return array
     }
     
-    class func binarySearchWith(sortedArray sortedArray:[Int], elementInArray:Int) ->Int{
+    class func binarySearchWith(#sortedArray:[Int], elementInArray:Int) ->Int{
         var low = 0, hight = sortedArray.count - 1, mid = 0;
         while low <= hight{
             // get the mid index of sortedArray
@@ -40,5 +40,23 @@ class SortArithmetic: NSObject {
         }
         // not find
         return NSNotFound
+    }
+    
+    class func selectionSort(var unsortedArray: [Int]) -> [Int]{
+        
+        for var i = 0; i < unsortedArray.count; i++ { // the element to be sorted
+            var minPosition = i
+            for var j = i; j < unsortedArray.count; j++ { // unsort array
+                if unsortedArray[j] < unsortedArray[minPosition]{
+                    minPosition = j // the min of the unsort array
+                }
+            }
+            
+            // exchange the min position with the element to be sorted
+            let temp = unsortedArray[i]
+            unsortedArray[i] = unsortedArray[minPosition]
+            unsortedArray[minPosition] = temp
+        }
+        return unsortedArray
     }
 }

@@ -10,13 +10,19 @@ import Foundation
 
 var sortableArray = [1,23,5,6,1,2,6,75,3,1,23,732,432,7,12,43,6,3,56,23]
 
-var sortedArray = SortArithmetic.bubbleSortWith(sortableArray)
+var bubblesortedArray = SortArithmetic.bubbleSortWith(sortableArray)
 
-println(sortedArray)
 
-var index = SortArithmetic.binarySearchWith(sortedArray: sortedArray, elementInArray: 732)
 
-println("the Element `\(sortedArray[index])` index of array is \(index)")
+var selectionSortedArray = SortArithmetic.selectionSort(sortableArray)
+
+println("selection sort is \(selectionSortedArray)")
+
+println(bubblesortedArray)
+
+var index = SortArithmetic.binarySearchWith(sortedArray: bubblesortedArray, elementInArray: 732)
+
+println("the Element `\(bubblesortedArray[index])` index of array is \(index)")
 
 
 var linkList = LinkList()
@@ -55,6 +61,10 @@ println("linklist is \(linkStack.linkStackDescription())")
 
 
 
+
+var maxSum = Algorithm.maxSubSequence([1,-1,3,-3,1])
+
+println("max sum is \(maxSum)")
 
 
 
