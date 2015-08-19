@@ -8,23 +8,33 @@
 
 import Foundation
 
+ /// sort
 var sortableArray = [1,23,5,6,1,2,6,75,3,1,23,732,432,7,12,43,6,3,56,23]
 
 var bubblesortedArray = SortArithmetic.bubbleSortWith(sortableArray)
 
-
-
 var selectionSortedArray = SortArithmetic.selectionSort(sortableArray)
 
-println("selection sort is \(selectionSortedArray)")
+print("selection sort is \(selectionSortedArray)", appendNewline:true)
 
-println(bubblesortedArray)
+print(bubblesortedArray, appendNewline:true)
 
-var index = SortArithmetic.binarySearchWith(sortedArray: bubblesortedArray, elementInArray: 732)
+/// algorithm
+var maxSum = Algorithm.maxSubSequence([1,-1,3,-3,1])
 
-println("the Element `\(bubblesortedArray[index])` index of array is \(index)")
+print("max sum is \(maxSum)", appendNewline:true)
+
+print("the sum of the triangle is \(Algorithm.triangle(3))", appendNewline: true)
+
+print("the recurrence sum of the triangle is \(Algorithm.triangleRecurrence(3))", appendNewline: true)
 
 
+ /// search
+var index = Algorithm.binarySearchWith(sortedArray: bubblesortedArray, elementInArray: 732)
+
+print("the Element `\(bubblesortedArray[index])` index of array is \(index)", appendNewline:true)
+
+ /// link list
 var linkList = LinkList()
 
 linkList.addNode(Node(element: "1",next: nil))
@@ -36,12 +46,14 @@ linkList.addNode(Node(element: "6",next: nil))
 linkList.addNode(Node(element: "7",next: nil))
 linkList.addNode(Node(element: "8",next: nil))
 
-println("linklist is \(linkList.listDescription()) the last node is \(linkList.lastNode().element)")
+print("linklist is \(linkList.listDescription()) the last node is \(linkList.lastNode().element)", appendNewline:true)
+
 
 linkList.delelteElement("4")
 
-println("linklist is \(linkList.listDescription())")
+print("linklist is \(linkList.listDescription())", appendNewline:true)
 
+ /// stack
 var linkStack = LinkStack()
 
 linkStack.push("1")
@@ -51,20 +63,35 @@ linkStack.push("4")
 linkStack.push("5")
 linkStack.push("6")
 
-println("linklist is \(linkStack.linkStackDescription())")
+print("linklist is \(linkStack.linkStackDescription())", appendNewline:true)
+
 
 linkStack.pop()
 linkStack.pop()
 linkStack.pop()
 
-println("linklist is \(linkStack.linkStackDescription())")
+print("linklist is \(linkStack.linkStackDescription())", appendNewline:true)
 
+ /// queue
 
+var listQueue = ListQueue()
 
+listQueue.insert("1")
+listQueue.insert("2")
+listQueue.insert("3")
+listQueue.insert("4")
+listQueue.insert("5")
+listQueue.insert("6")
 
-var maxSum = Algorithm.maxSubSequence([1,-1,3,-3,1])
+print("listQueue is \(listQueue.listQueueDescription())")
 
-println("max sum is \(maxSum)")
+listQueue.remove()
+print("listQueue is \(listQueue.listQueueDescription())")
+
+var a = Algorithm.anagram("aee", count: 3)
+
+print("a is \(a)")
+
 
 
 

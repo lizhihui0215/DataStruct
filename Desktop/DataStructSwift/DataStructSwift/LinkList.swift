@@ -23,14 +23,14 @@ class LinkList: NSObject {
     
     var isEmpty: Bool{ get{ return self.header.next == nil } }
     
-    /*!
+    /**
     clean the link list
     */
     func makeEmpty(){
        self.header.next = nil
     }
     
-    /*!
+    /**
     check the node if it is the last node of the linklist
     
     :param: node the node
@@ -41,7 +41,7 @@ class LinkList: NSObject {
         return node.next == nil
     }
     
-    /*!
+    /**
     the description of the linklist
     
     :returns: a String is description of the linklist
@@ -61,7 +61,7 @@ class LinkList: NSObject {
         return description
     }
     
-    /*!
+    /**
     Find the element of the node
     
     :param: element the element
@@ -76,7 +76,7 @@ class LinkList: NSObject {
         return node
     }
     
-    /*!
+    /**
     Delete the element which in the linklist
     
     :param: element the element to be deleted
@@ -97,7 +97,7 @@ class LinkList: NSObject {
         return success
     }
     
-    /*!
+    /**
     Find the previous node of the the element
     
     :param: element the element
@@ -113,7 +113,7 @@ class LinkList: NSObject {
     }
     
     
-    /*!
+    /**
     Find the last node of the linklist
     
     :returns: the last node
@@ -126,7 +126,7 @@ class LinkList: NSObject {
         return node
     }
     
-    /*!
+    /**
     Add the node to the last of the linklist
     
     :param: node the node to be add

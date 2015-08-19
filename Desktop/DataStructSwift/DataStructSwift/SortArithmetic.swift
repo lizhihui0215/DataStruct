@@ -9,6 +9,14 @@
 import Foundation
 
 class SortArithmetic: NSObject {
+    
+    /**
+    use bubble sort with the given array
+    
+    :param: array the unsort array
+    
+    :returns: the sorted array
+    */
     class func bubbleSortWith(var array:[Int]) ->[Int]{
         for var index = 0; index < array.count; index++ {
             for var indexOfUnCompared = index; indexOfUnCompared < array.count; indexOfUnCompared++ {
@@ -22,26 +30,13 @@ class SortArithmetic: NSObject {
         return array
     }
     
-    class func binarySearchWith(#sortedArray:[Int], elementInArray:Int) ->Int{
-        var low = 0, hight = sortedArray.count - 1, mid = 0;
-        while low <= hight{
-            // get the mid index of sortedArray
-            mid = (low + hight) / 2;
-            
-            if sortedArray[mid] < elementInArray {
-                low = mid + 1
-            }else if sortedArray[mid] > elementInArray {
-                hight = mid - 1
-            }else{
-                // find the index
-                return mid
-            }
-            
-        }
-        // not find
-        return NSNotFound
-    }
+    /**
+    sort the array use selection sort
     
+    :param: unsortedArray the array to be sorted
+    
+    :returns: the sorted array
+    */
     class func selectionSort(var unsortedArray: [Int]) -> [Int]{
         
         for var i = 0; i < unsortedArray.count; i++ { // the element to be sorted
