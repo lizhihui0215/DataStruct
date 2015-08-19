@@ -88,7 +88,7 @@ print("listQueue is \(listQueue.listQueueDescription())")
 listQueue.remove()
 print("listQueue is \(listQueue.listQueueDescription())")
 
-var a = Algorithm.anagram("aee", count: 3)
+var a = Algorithm.anagram("abc", count: 3)
 
 print("a is \(a)")
 
